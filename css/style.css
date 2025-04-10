@@ -83,9 +83,10 @@ img {
 }
 
 .section-content {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
-  max-width: var(--site-max-width);
+  max-width: var(--site-max-width); /* z. B. 1300px */
+  width: 100%;
 }
 
 /* Navbar settings */
@@ -579,6 +580,12 @@ body.blog-page main {
 
   .project-section .project-list .project-item {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section-content {
+    max-width: 90vw;
   }
 }
 
