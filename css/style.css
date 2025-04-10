@@ -197,6 +197,108 @@ header .navbar {
 }
 
 /* --------------------------------------------------
+   Projects Section Styles
+-------------------------------------------------- */
+.about-section {
+  padding: 60px 0;
+  background: var(--white-color);
+}
+
+.about-section .section-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
+}
+.about-section .about-details .section-title {
+  padding: 0;
+}
+
+.about-section .about-details {
+  max-width: 50%;
+}
+
+.about-section .about-details .text {
+  line-height: 30px;
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: var(--font-size-n);
+}
+
+.about-section .social-link-list {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+  color: var(--primary-color);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+  color: var(--button-secondary-color);
+}
+
+/* --------------------------------------------------
+   Projects Section Styles
+-------------------------------------------------- */
+
+.project-section {
+  color: var(--white-color);
+  background: var(--dark-color);
+  padding: 50px 0 100px;
+}
+
+.project-section .section-title {
+  margin: 0 auto;
+}
+
+.project-section .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-section .project-list .project-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 3 - 110px);
+}
+
+.project-section .project-list .project-item .project-image {
+  max-width: 83%;
+  aspect-ratio: 1;
+  margin-bottom: 1;
+  object-fit: contain;
+}
+
+.project-section .project-list .project-item .name {
+  margin: 12px 0;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+}
+
+.project-section .project-list .project-item .text {
+  font-size: var(--font-size-s);
+}
+
+
+/* --------------------------------------------------
    Blog Page Styles
 -------------------------------------------------- */
 .blog-page main {
