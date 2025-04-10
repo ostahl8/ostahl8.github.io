@@ -12,5 +12,11 @@ menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
 //Close menu when the navlink is clicked
 navLinks.forEach(link => {
-    link.addEventListener("click", () => menuOpenButton.click());
-});
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      // only closing link when in page link
+      if (href.startsWith("#")) {
+        menuOpenButton.click();
+      }
+    });
+  });
