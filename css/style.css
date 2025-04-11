@@ -483,7 +483,6 @@ header .navbar {
 
 @media screen and (max-width: 480px) {
   .hero-section .section-content {
-    position: center;
     padding-top: 100px;
   }
 
@@ -547,7 +546,7 @@ header .navbar {
   .about-section .section-content .about-details .text{
   font-size: 1rem;
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
   }
 
   .about-section .section-content .about-details .section-title {
@@ -567,17 +566,15 @@ header .navbar {
 }
 
 .project-section .project-list .project-item {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
+  width: 90%;
+  max-width: 320px;
+  flex-direction: column;
 }
 
 .project-section .section-content .project-list .project-item .project-image {
-    width: 75%;
+    width: 100%;
     height: auto;
-    max-width: 75%;
+    max-width: 250px;
     object-fit: contain; /* alternativ: cover */
     border-radius: var(--border-radius-s); 
 }
