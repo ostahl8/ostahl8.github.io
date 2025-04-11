@@ -23,6 +23,7 @@
   --button-primary-color: #526d82;
   --button-secondary-color: #ffc26f;
 
+  --font-size-xs: 0.75rem;
   --font-size-s: 0.9rem;
   --font-size-n: 1rem;
   --font-size-m: 1.2rem;
@@ -197,7 +198,7 @@ header .navbar {
 }
 
 /* --------------------------------------------------
-   Projects Section Styles
+   About Section Styles
 -------------------------------------------------- */
 .about-section {
   padding: 60px 0;
@@ -480,14 +481,118 @@ header .navbar {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
   .hero-section .section-content {
-    padding: 20px 10px;
+    position: center;
+    padding-top: 100px;
   }
+
+  .hero-section .hero-details .stats {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-section .hero-details .stat-item {
+    text-align: center;
+  }
+  .hero-section .hero-details .stat-item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
+    color: var(--dark-color);
+  }
+  .hero-section .hero-details .stat-item span {
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    color: var(--dark-color);
+  }
+
   .hero-section .hero-image-wrapper img {
-    max-width: 80%;
+    max-width: 75%;
   }
+
+  /* --------------------------------------------------
+   About Section
+-------------------------------------------------- */
+
+  .about-section {
+    padding: 60px 0;
+    background: var(--white-color);
+  }
+  
+  .about-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-section .about-image-wrapper .about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+  }
+  .about-section .section-content .about-details {
+    width: 100%;
+    max-width: 90%; 
+    text-align: left; 
+    margin: 0 auto;
+  }
+  .about-section .section-content .about-details .text{
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  }
+
+  .about-section .section-content .about-details .section-title {
+    padding: 0px;
+  }
+
+   /* --------------------------------------------------
+   Project Section
+-------------------------------------------------- */
+.project-section .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.project-section .project-list .project-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.project-section .section-content .project-list .project-item .project-image {
+    width: 75%;
+    height: auto;
+    max-width: 75%;
+    object-fit: contain; /* alternativ: cover */
+    border-radius: var(--border-radius-s); 
+}
+
+.project-section .project-list .project-item .name {
+  margin: 1px 0;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+}
+
+.project-section .project-list .project-item .text {
+  font-size: var(--font-size-xs);
+}
+
+} 
 
 /* --------------------------------------------------
    Footer
